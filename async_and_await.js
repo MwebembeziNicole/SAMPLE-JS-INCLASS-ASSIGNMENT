@@ -1,4 +1,4 @@
-export const fetchUsingAsynchAwait = async (url) => {
+export const fetchUsingAsyncAwait = async (url) => {
     try{
         const res = await fetch(URL);
         if (!response.ok){
