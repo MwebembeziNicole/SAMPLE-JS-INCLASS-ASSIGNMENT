@@ -1,5 +1,5 @@
 export const fetchUsingCallback = (URL, callback) =>{
-    fetch(url)
+    fetch(URL)
     .then(res => {
         if(!res.ok){
             throw new Error(`Error! Status: ${res.status}`);

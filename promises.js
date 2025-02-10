@@ -1,9 +1,9 @@
-export const fetchUsingPromise = (url) => {
+export const fetchUsingPromise = (URL) => {
     return new Promise((resolve, reject) => {
         fetch(URL)
         .then(response => {
-            if (Ires.ok) {
-                throw new Error('Error! Status: ${res.status}');
+            if (!response.ok) {
+                throw new Error(`ERROR! Status: ${res.status}`);
             }
             return response.json();
         })

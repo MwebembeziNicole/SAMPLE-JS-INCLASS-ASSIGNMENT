@@ -1,6 +1,6 @@
-export const fetchUsingAsyncAwait = async (url) => {
+export const fetchUsingAsyncAwait = async (URL) => {
     try{
-        const res = await fetch(URL);
+        const response = await fetch(URL);
         if (!response.ok){
             throw new Error(`Error! Status: ${response.status}`);
         }
